@@ -1,0 +1,417 @@
+/* Startseite, unterschiedlich je nach Displaygröße, nicht an klassichen Größen orientiert sondern an der Lesbarkeit der Elemente, kleinste Ansicht für Geräte bis 1200px, dann bis einschl. 1400px und alles größere, bei ganz kleinen Geräten wird das Bild oben nicht angezeigt */
+
+/*Einheitliches für die Startseite */
+ #home{
+   background-color: var(--light);
+   color: var(--grey);
+  overflow-y: scroll;
+  padding-bottom: 140px;
+ }
+
+ #home .button:hover{
+   border: solid 1px var(--light);
+   color: var(--grey);
+   background-color: var(--light);
+ }
+
+ #home p{
+   font-family: 'Open Sans', sans-serif;
+   font-size: 1rem;
+   line-height: 1.3rem;
+   max-width: 700px;
+ }
+
+ #home .stage img{
+   width: 100%;
+   max-width: 1440px;
+   height: auto;
+   max-height: 560px;
+ }
+
+
+ @media only screen and (min-width: 320px) and (max-width: 1199px){
+   .stage{
+     position: relative;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: auto;
+      display: block;
+      margin-bottom: 80px;
+   }
+
+   #home .stage img{
+     position: relative;
+     z-index: 10;
+   }
+
+   #home .stagetext{
+     color: var(--grey);
+     position: relative;
+     top: -5px;
+     background-color: var(--aktzent);
+     text-align: center;
+     padding-top: 45px;
+     padding-bottom: 45px;
+   }
+
+   #home .button{
+     display: block;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1rem;
+     width: 200px;
+     border: solid 1px var(--grey);
+     border-radius: 20px;
+     text-align: center;
+     height: 48px;
+     color: var(--grey);
+     padding: 14px;
+     margin-top: 40px;
+     margin-left: auto;
+     margin-right: auto;
+     cursor:pointer;
+   }
+
+  .video-wrapper{
+     position: relative;
+    display: inline-block;
+     width: 100%;
+     height: auto;
+     left: 50%;
+     margin-top: 88px;
+     margin-bottom: 40px;
+   }
+
+   .videobild{
+     position: relative;
+     top: 60px;
+    display: inline-block;
+     width: 100%;
+     height: auto;
+     left: 50%;
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, 0%);
+     margin-bottom: 120px;
+   }
+
+   #home .stagetext p{
+     margin-left: auto;
+     margin-right: auto;
+     padding: 15px;
+   }
+
+   #home .text_bg{
+     position: relative;
+     background-color: var(--aktzent);
+     width: 100%;
+     max-width: 1440px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1rem;
+     line-height: 1.25rem;
+      display: inline-block;
+      padding-top: 48px;
+      padding-bottom: 48px;
+   }
+
+  #home h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 15px;
+  }
+
+  #home .text,  #home .text_bg p{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    display: inline-block;
+  }
+
+  #home h2{
+    position: relative;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 2.25rem;
+  }
+
+ #home .text_bg h2{
+    position: relative;
+    left: 15%;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+
+  #home .text_bg .italic{
+    position: relative;
+    left: 15%;
+    font-style: italic;
+    max-width: 700px;
+    width: 70%;
+  }
+ }
+
+
+
+ @media only screen and (min-width: 1200px) and (max-width: 1440px){
+
+   .stage{
+     position: relative;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: auto;
+      display: block;
+      margin-bottom: 80px;
+   }
+
+   #home .stage img{
+     position: relative;
+     max-height: 560px;
+   }
+
+   #home .stagetext{
+     color: var(--light);
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -50%);
+     text-align: center;
+   }
+
+   #home .button{
+     display: block;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1rem;
+     width: 200px;
+     border: solid 1px var(--light);
+     border-radius: 20px;
+     text-align: center;
+     height: 48px;
+     color: var(--light);
+     padding: 14px;
+     margin-top: 40px;
+     margin-left: auto;
+     margin-right: auto;
+     cursor:pointer;
+   }
+
+   .video{
+     position: relative;
+    display: inline-block;
+     width: 70%;
+     max-width: 1000px;
+     height: auto;
+     left: 50%;
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, -20%);
+     margin-top: 88px;
+   }
+
+   .videobild{
+     position: relative;
+    display: inline-block;
+     width: 70%;
+     max-width: 1000px;
+     height: auto;
+     left: 50%;
+     -ms-transform: translate(-50%, -50%);
+     transform: translate(-50%, 0%);
+     margin-bottom: 40px;
+   }
+
+   #home .text_bg{
+     position: relative;
+     background-color: var(--aktzent);
+     width: 100%;
+     max-width: 1440px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1rem;
+     line-height: 1.25rem;
+      display: inline-block;
+      padding-top: 48px;
+      padding-bottom: 48px;
+   }
+
+   #home .text{
+     position: relative;
+     width: 100%;
+     max-width: 1440px;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1rem;
+     line-height: 1.25rem;
+      display: inline-block;
+   }
+
+ #home h1{
+   font-family: 'Raleway', sans-serif;
+   font-size: 3rem;
+   font-weight: bold;
+   text-align: center;
+   width: 100%;
+   display: block;
+   margin-bottom: 32px;
+ }
+
+ #home h2{
+   position: relative;
+   left: 15.2%;
+   font-size: 2rem;
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   margin-bottom: 40px;
+ }
+
+ #home .text p,  #home .text_bg p{
+   position: relative;
+   left: 15.2%;
+   max-width: 720px;
+ }
+
+ #home .text_bg .italic{
+   position: relative;
+   left: 15.2%;
+   font-style: italic;
+   max-width: 700px;
+ }
+ }
+
+ /*Übergroße Bildschirme */
+@media only screen and (min-width: 1441px) {
+  .stage{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 560px;
+     display: block;
+     left: 50%;
+     transform: translate(-50%, -0%);
+     background-color: var(--lightgrey);
+     margin-bottom: 80px;
+  }
+
+  #home .stage img{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -0%);
+  }
+
+  #home .stagetext{
+      color: var(--light);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+  #home .stagetext p{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  #home h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 32px;
+  }
+
+#home .button{
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  width: 200px;
+  border: solid 1px var(--light);
+  border-radius: 20px;
+  text-align: center;
+  height: 48px;
+  color: var(--light);
+  padding: 14px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor:pointer;
+}
+
+.video{
+  position: relative;
+ display: inline-block;
+  width: 70%;
+  max-width: 1000px;
+  height: auto;
+  left: 50%;
+  margin-top: 88px;
+}
+
+.videobild{
+  position: relative;
+ display: inline-block;
+ margin-bottom: 40px;
+  width: 70%;
+  max-width: 1000px;
+  height: auto;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+}
+
+#home .text_bg{
+  position: relative;
+  background-color: var(--aktzent);
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  display: inline-block;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 3000px;
+}
+
+#home .text{
+   position: relative;
+   display: inline-block;
+   width: 70%;
+   max-width: 1000px;
+   height: auto;
+   left: 15%;
+}
+
+#home h2{
+  position: relative;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#home .text_bg p, #home .text_bg h2{
+  position: relative;
+  max-width: 720px;
+  left: 15%;
+}
+
+#home .text_bg .italic{
+  position: relative;
+  max-width: 720px;
+  left: 15%;
+  font-style: italic;
+}
+}
